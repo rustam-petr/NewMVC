@@ -8,20 +8,20 @@ class View
     protected string $template;
 
     /**
-     * @param $data
+     * @param array $data
      * @return $this
      */
-    public function setData($data)
+    public function setData(array $data): static
     {
         $this->data = $data;
         return $this;
     }
 
-
     /**
-     * @param $template
+     * @param string $template
+     * @return $this
      */
-    public function setTemplace($template)
+    public function setTemplate(string $template): static
     {
         $this->template = $template;
         return $this;
@@ -29,13 +29,12 @@ class View
 
     public function view()
     {
-        include __DIR__ . "/../../templaces/main.php";
+        include __DIR__ . "/../../templates/main.php";
     }
 
     public function body()
     {
-        include __DIR__ . "/../../templaces/$this->template.php";
+        include __DIR__ . "/../../templates/$this->template.php";
     }
-
 
 }
