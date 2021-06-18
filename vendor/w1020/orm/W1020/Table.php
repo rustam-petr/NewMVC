@@ -22,7 +22,7 @@ class Table extends CRUD
      * @param int $pageSize
      * @return $this
      */
-    public function setPageSize(int $pageSize): static
+    public function setPageSize(int $pageSize)
     {
         $this->pageSize = $pageSize;
         return $this;

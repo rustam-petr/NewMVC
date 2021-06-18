@@ -11,7 +11,7 @@ class View
      * @param array $data
      * @return $this
      */
-    public function setData(array $data): static
+    public function setData(array $data)
     {
         $this->data = $data;
         return $this;
@@ -21,7 +21,7 @@ class View
      * @param string $template
      * @return $this
      */
-    public function setTemplate(string $template): static
+    public function setTemplate(string $template)
     {
         $this->template = $template;
         return $this;
